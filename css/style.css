@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: Montserrat;
+  border: solid;
+  border-width: 1vh;
+  border-color: grey;
+  width: 50vw;
+}
+
+p.a {
+  font-size: 20pt;
+}
+
+button[type="submit"] {
+  background-color: gray;
+}
