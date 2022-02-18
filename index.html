@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div>
+    <p class="a"> Użyj poniższej formy, żeby sprawdzić swoje BMI. </p>
+    <form oninput="result2.value = num1.value / (num2.value * num2.value) * 10000">
+        <label><b>Tutaj wpisz swoją wagę:</b><br>
+            <input type="number" name="num1" required pattern="^[0-9]{3}$"><br>
+        </label>
+        <br>
+        <label><b>Tutaj wpisz swój wzrost:</b><br>
+            <input type="number" name="num2" required pattern="^[0-9]{3}$"><br>
+        </label>
+        <br>
+            <p class="a">Sprawdź swoje BMI: </p>
+        <output id="result2" display onchange="setTwoNumberDecimal"></output><br>
+        <br>
+        <button type="submit" target:="_blank">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
