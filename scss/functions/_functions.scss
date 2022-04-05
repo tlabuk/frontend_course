@@ -1,6 +1,7 @@
 @use "sass:math";
 
-// Funkcja przeliczająca wartość dla dowolnego atrybutu w px zgodnie z wybranym typem działania
+
+// Funkcja przeliczająca wartości dla dowolnego atrybutu w px zgodnie z wybranym typem działania
 
 @function calculate($num1, $num2, $dzialanie) {
     @if ($dzialanie) == 'dz' {
