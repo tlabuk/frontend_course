@@ -1,0 +1,15 @@
+@import "functions/functions";
+
+div {
+    width: calculate(300, 11, 'dz');
+}
+div {
+    width: calculate(300, 11, 'm');
+}
+div {
+    width: calculate(300, 11, 'o');
+}
+div {
+    width: calculate(300, 11, 'd');
+}
+

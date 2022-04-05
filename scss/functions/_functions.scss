@@ -1,0 +1,19 @@
+@use "sass:math";
+
+// Funkcja przeliczająca wartość dla dowolnego atrybutu w px zgodnie z wybranym typem działania
+
+@function calculate($num1, $num2, $dzialanie) {
+    @if ($dzialanie) == 'dz' {
+        $result: math.div($num1, $num2);
+        @return math.round($result) + px;
+  }
+    @if ($dzialanie) == 'm' {
+        @return $num1 * $num2 + px;
+  }
+    @if ($dzialanie) == 'o' {
+        @return $num1 - $num2 + px;
+  }
+    @if ($dzialanie) == 'd' {
+        @return $num1 + $num2 + px;
+  }
+}
