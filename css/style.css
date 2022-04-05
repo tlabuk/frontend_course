@@ -1,36 +1,17 @@
-@keyframes div-animation {
-
-    25% {
-        transform: translateX(300px);
-    }
-    50% {
-        transform: translate(300px, 300px);
-    }
-    75% {
-        transform: translate(0px, 300px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+div {
+  width: 27px;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+div {
+  width: 3300px;
 }
 
-.div-container {
-    height: 400px;
-    width: 400px;
-    background-color: beige;
+div {
+  width: 289px;
 }
 
-.div-move {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    animation: div-animation 10s linear infinite;
+div {
+  width: 311px;
 }
+
+/*# sourceMappingURL=style.css.map */
