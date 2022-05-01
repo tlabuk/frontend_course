@@ -1,18 +1,4 @@
-div {
-  width: 27px;
+.main-container {
+  width: 60%;
+  margin: 0 auto;
 }
-
-div {
-  width: 3300px;
-}
-
-div {
-  width: 289px;
-}
-
-div {
-  width: 311px;
-}
-
-/*# sourceMappingURL=style.css.map */
-
