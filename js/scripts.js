@@ -4,7 +4,7 @@ const Name = ['Anna', 'Katarzyna', 'Marek', 'Joanna', 'Mariusz', 'Longin', 'Dobr
 const Surname = ['Kowalska', 'Pierchowska', 'Miedrzycka', 'Bobicka', 'Mariuszowski', 'Podbipieta', 'Bobkowski']
 
 function createTable() {
-    var tbody = document.getElementsByTagName("tbody")[0];
+    var tbody = document.querySelector("tbody");
     for (var i = 0; i < Name.length; i++) {
         
         var row = document.createElement("tr");
