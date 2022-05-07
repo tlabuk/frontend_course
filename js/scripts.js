@@ -1,13 +1,13 @@
 'use strict';
 
-const Name = ['Anna', 'Katarzyna', 'Marek', 'Joanna', 'Mariusz', 'Longin', 'Dobromir', 'Sławomir']
-const Surname = ['Kowalska', 'Pierchowska', 'Miedrzycka', 'Bobicka', 'Mariuszowski', 'Podbipieta', 'Bobkowski', 'Kowalski']
+const firstName = ['Anna', 'Katarzyna', 'Marek', 'Joanna', 'Mariusz', 'Longin', 'Dobromir', 'Sławomir']
+const surname = ['Kowalska', 'Pierchowska', 'Miedrzycka', 'Bobicka', 'Mariuszowski', 'Podbipieta', 'Bobkowski', 'Kowalski']
 
 function createTable() {
     const tbody = document.querySelector("tbody");
-    for (let i = 0; i < Name.length; i++) {
+    for (let i = 0; i < firstName.length; i++) {
         
-        var row = document.createElement("tr");
+        const row = document.createElement("tr");
         for (let j = 0; j < 1; j++) {
 
             const cell = document.createElement("td"); 
@@ -18,14 +18,14 @@ function createTable() {
         for (let j = 1; j < 2; j++) {
 
         const cell = document.createElement("td");   
-        let cellText = document.createTextNode(`${Name[i]}`);
+        let cellText = document.createTextNode(`${firstName[i]}`);
             cell.appendChild(cellText);
             row.appendChild(cell);
         }
         for (let j = 2; j < 3; j++) {
 
             const cell = document.createElement("td");   
-            let cellText = document.createTextNode(`${Surname[i]}`);
+            let cellText = document.createTextNode(`${surname[i]}`);
                 cell.appendChild(cellText);
                 row.appendChild(cell);
             }
